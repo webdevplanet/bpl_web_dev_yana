@@ -2,9 +2,42 @@
 <head>
 <title> Shares memoir </title>
 <link href="styles.css" rel="stylesheet">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+
+
 </head>
 
 <body>
+    
+<form>
+<input type="button" value="Email Me"
+onClick="location.href='mailto:yanaflamma@gmail.com'">
+</form>
+<FORM>
+<INPUT TYPE="button" VALUE="Add to Favorites" onClick='window.external.AddFavorite(location.href, document.title);'>
+</FORM>
 <h1> Hi! My name is Sharess</h1>
 
 <img src=sharkit.jpg width="50%">

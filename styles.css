@@ -1,18 +1,19 @@
 body {
-	font-size:18px;
-}
-div {
-    border: 12px solid violet;
-    margin: 5px;
-    padding: 20px;
 	
+	
+	font-size:18px;
+     background:repeating-linear-gradient(lightseagreen,yellow,blue);
+
+		height:100%;
+		width:100%;
 }
+
 
 h1 {
 	color:red;
 }
 
 h2 {
-	color:blue;
+	color:purple;
 }
 
